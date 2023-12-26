@@ -1,7 +1,7 @@
-package br.com.study.clean.presentation.controller;
+package br.com.study.clean.adapter.inbound;
 
-import br.com.study.clean.domain.entities.Book;
-import br.com.study.clean.domain.usecases.BookUseCase;
+import br.com.study.clean.core.entity.Book;
+import br.com.study.clean.core.usecase.BookUseCase;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

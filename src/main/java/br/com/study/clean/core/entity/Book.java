@@ -1,4 +1,4 @@
-package br.com.study.clean.domain.entities;
+package br.com.study.clean.core.entity;
 
 public class Book {
 

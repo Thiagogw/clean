@@ -1,7 +1,7 @@
-package br.com.study.clean.infrastructure.repositories;
+package br.com.study.clean.adapter.outbound;
 
-import br.com.study.clean.domain.entities.Book;
-import br.com.study.clean.domain.repositories.BookRepository;
+import br.com.study.clean.core.entity.Book;
+import br.com.study.clean.core.dataprovider.BookRepository;
 import org.springframework.data.mongodb.core.MongoTemplate;
 
 public class BookRepositoryImpl implements BookRepository {
