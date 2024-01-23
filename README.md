@@ -3,15 +3,18 @@
 ----------------------------------------
 
 **Estrutura**
-- _Core_
-- _Adapter_
-- _Infrastructure_
+- _Entities_
+- _Use Cases_
+- _Adapters_
+- _Externals_
 
-**Core** - Camada responsável por manter as regras de negócio, que irá ser acessada atráves interfaces. A implementação da interface do UseCase fica no core enquanto as demais são da camada de adapter.
+**Entities** - Camada responsável por centralizar as regras de negócio, respeitando o contexto do domínio.
 
-**Adapter** - Camada responsável por manter as implementações das interfaces de saida e também os meios que vão chamar a aplicação (controller, mensageria, etc);
+**Use Cases** - Camada responsável pelos casos de uso que chamam a camada das entidades, sendo responsável pelo fluxo.
 
-**Infrastrucutre** - Camada responsável por manter as configurações da aplicação, como BeanConfiguration por exemplo.
+**Adapters** - Camada responsável por adaptar as entradas e saídas da camada externa com as internas (use cases e entities).
+
+**Externals** - Camada responsável pelos componentes externos de entrada (ex: controller, consumer, etc) e saída (ex: banco de dados, etc) da aplicação 
 
 ----------------------------------------
 
@@ -23,11 +26,11 @@
 
 _Manutenibilidade_:
 
-A separação clara de responsabilidades e a direção controlada de dependências facilitam a manutenção do código ao longo do tempo.
+A separação clara de responsabilidades de cada camada facilita a manutenção do código.
 
 _Testabilidade_:
 
-A estrutura em camadas da Clean Architecture facilita a realização de testes unitários, já que as camadas internas são independentes das externas.
+A estrutura em camadas facilita a realização de testes unitários, já que as camadas internas são independentes das externas.
 
 _Flexibilidade_:
 
@@ -45,8 +48,8 @@ As entidades e casos de uso podem ser reutilizados em diferentes contextos, pois
 
 _Complexidade Inicial_:
 
-A implementação inicial da Clean Architecture pode parecer mais complexa do que estruturas mais simples, especialmente para projetos pequenos ou simples.
+A implementação inicial pode parecer mais complexa do que estruturas mais simples, especialmente para projetos pequenos ou simples.
 
 _Curva de Aprendizado_:
 
-A equipe pode precisar de tempo para se acostumar com a abordagem e entender a lógica de separação de responsabilidades proposta pela Clean Architecture.
+A equipe pode precisar de tempo para se acostumar com a abordagem e entender a lógica de separação de responsabilidades propostas.
