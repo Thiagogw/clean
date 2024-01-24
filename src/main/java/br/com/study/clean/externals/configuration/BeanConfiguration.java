@@ -1,7 +1,7 @@
-package br.com.study.clean.infrastructure;
+package br.com.study.clean.externals.configuration;
 
-import br.com.study.clean.adapter.outbound.BookRepositoryImpl;
-import br.com.study.clean.core.dataprovider.BookRepository;
+import br.com.study.clean.externals.outbound.dataprovider.BookRepository;
+import br.com.study.clean.externals.outbound.dataprovider.impl.BookRepositoryImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.core.MongoTemplate;

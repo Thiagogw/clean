@@ -1,6 +1,6 @@
-package br.com.study.clean.core.entity;
+package br.com.study.clean.externals.inbound.web.dto;
 
-public class Book {
+public class BookRequest {
 
     private String id;
     private String name;

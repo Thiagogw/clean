@@ -1,8 +1,8 @@
-package br.com.study.clean.core.usecase.impl;
+package br.com.study.clean.usecases.impl;
 
-import br.com.study.clean.core.dataprovider.BookRepository;
-import br.com.study.clean.core.entity.Book;
-import br.com.study.clean.core.usecase.BookUseCase;
+import br.com.study.clean.externals.outbound.dataprovider.BookRepository;
+import br.com.study.clean.entities.domain.Book;
+import br.com.study.clean.usecases.BookUseCase;
 
 public class BookUseCaseImpl implements BookUseCase {
 
